@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bootstrap_gray_dark"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="41dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:text="T0"
+        android:textColor="#FFFF"
+        android:textSize="30dp"
+        app:layout_constraintStart_toEndOf="@+id/spinner1"
+        app:layout_constraintTop_toTopOf="@+id/spinner1" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="248dp"
+        android:layout_height="117dp"
+        android:textColor="#FFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner1"
+        app:layout_constraintVertical_bias="0.236" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/fromEditText"
+        android:layout_width="235dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:textColor="@color/cardview_dark_background"
+        app:bootstrapBrand="info"
+        app:bootstrapSize="lg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:roundedCorners="true" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/button"
+        android:layout_width="99dp"
+        android:layout_height="39dp"
+        android:text="Submit"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/spinner2"
+        app:layout_constraintTop_toTopOf="@+id/spinner2"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="111dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:textColor="#FFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="116dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:textColor="#FFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fromEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

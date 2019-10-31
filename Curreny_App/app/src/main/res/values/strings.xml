@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ConvertCurrency</string>
+    <string name="title_activity_drop_down">DropDown</string>
+    <string-array name="currency_lists">
+        <item>US-Dollar</item>
+        <item>KH-Riel</item>
+    </string-array>
+
+    <string-array name="currency_lists2">
+        <item>KH-Riel</item>
+        <item>US-Dollar</item>
+    </string-array>
+</resources>
